@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            flex: 1;
+        }
+        .profile-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile-info div {
+            max-width: 600px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">About Me</a></li>
+                <li><a href="subject.html">Subject Taken</a></li>
+                <li><a href="enrolled.html">Enrolled</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="favorites.html">My Favorites</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="profile-info">
+            <h2>My Favorites</h2>
+            <ul>
+                <li><strong>Sports:</strong> Volleyball</li>
+                <li><strong>Online Activity:</strong> Gaming</li>
+                <li><strong>Games:</strong> Call of Duty Mobile</li>
+                <li><strong>Movies:</strong> Mr Robot</li>
+                <li><strong>Music:</strong> HipHop/Rap</li>
+                <li><strong>Food:</strong> Siomai</li>
+                <li><strong>Place:</strong> Beach</li>
+                <li><strong>Anime:</strong> Hunter X Hunter</li>
+                <li><strong>Hobby:</strong> Photography</li>
+                <li><strong>Artist:</strong> Kendrick Lamar</li>
+            </ul>
+        </div>
+    </section>
+    </section>
+    <footer>
+        <p>Copyright © John Bryan Luzano BSIT2</p>
+    </footer>
+</body>
+</html>

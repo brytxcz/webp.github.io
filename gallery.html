@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            flex: 1;
+        }
+        .profile-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .carousel-container {
+            position: relative;
+            width: 400px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel img {
+            width: 400px;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">About Me</a></li>
+                <li><a href="subject.html">Subject Taken</a></li>
+                <li><a href="enrolled.html">Enrolled</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="favorites.html">My Favorites</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel" id="carousel">
+                <img src="c:\Users\User\Downloads\117100693_2774656716193760_8544890163265076241_n.jpg" alt="Image 1">
+                <img src="c:\Users\User\Downloads\476163991_4079346569058095_5112866054220027350_n (1).jpg" alt="Image 2">
+                <img src="c:\Users\User\Downloads\342543194_914248899897398_2752034062972013616_n.jpg" alt="Image 3">
+                <img src=":\Users\User\Downloads\372909242_9918619774879535_7748193395589492180_n.jpg" alt="">
+                <img src="c:\Users\User\Downloads\331773347_679672920581481_7569016687629032307_n.jpg" alt="Image 5">
+                <img src="c:\Users\User\Downloads\331694727_470666061799915_4598845001843685772_n.jpg" alt="Image 6">
+                <img src="c:\Users\User\Downloads\462270682_1761098908030812_988831182350849612_n.jpg" alt="Image 7">
+                <img src="c:\Users\User\Downloads\462244517_458782887179734_5515790243374035053_n.jpg" alt="Image 8">
+                <img src="c:\Users\User\Downloads\458435614_882036646901958_6879200836605242704_n.jpg" alt="Image 9">
+                <img src="c:\Users\User\Downloads\475444703_1756725751561106_4333258203711882408_n.jpg" alt="Image 10">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright © John Bryan Luzano BSIT2</p>
+    </footer>
+    <script>
+        let index = 0;
+        function moveSlide(direction) {
+            const carousel = document.getElementById("carousel");
+            const totalImages = carousel.children.length;
+            const imageWidth = carousel.children[0].clientWidth;
+            index += direction;
+            if (index < 0) index = totalImages - 1;
+            if (index >= totalImages) index = 0;
+            carousel.style.transform = `translateX(${-index * imageWidth}px)`;
+        }
+    </script>
+</body>
+</html>

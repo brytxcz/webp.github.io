@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            flex: 1;
+        }
+        .profile-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile-info div {
+            max-width: 600px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: auto;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center; /* Center text in table cells */
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .pagination {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .pagination a {
+      padding: 8px 16px;
+      margin: 0 5px;
+      background-color: #A6C9E2;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .pagination a.active {
+      background-color: #4E8BC1;
+    }
+
+    .pagination a:hover:not(.active) {
+      background-color: #ddd;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">About Me</a></li>
+                <li><a href="subject.html">Subject Taken</a></li>
+                <li><a href="enrolled.html">Enrolled</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="favorites.html">My Favorites</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <center><h2>First Year - 2nd semester</h2></center>
+        <div style="display: flex; justify-content: center;">
+        <table>
+            <tr>
+                <th>Subject Name</th>
+                <th>Description</th>
+                <th>Units</th>
+            </tr>
+            <tr>
+                <td>MATH 1</td>
+                <td>MATHEMATICS IN THE MODERN WORLD</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>EP 1S</td>
+                <td>ENGLISH PROFICIENCY - START I</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>CSIT 3</td>
+                <td>INTERMEDIATE PROGRAMMING</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>ITP 1</td>
+                <td>IT FUNDAMENTALS</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>ITP 2</td>
+                <td>DISCRETE MATHEMATICS</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>PE 2</td>
+                <td>PATH FIT 2: FITNESS TRAINING</td>
+                <td>2.0</td>
+            </tr>
+            <tr>
+                <td>NSTP 12C</td>
+                <td>NSTP 2 - CIVIC WELFARE TRAINING SERVICE</td>
+                <td>3.0</td>
+            </tr>
+        </table>
+    </div>
+    </section>
+    <div class="pagination">
+        <a class="active" href="subject.html">1</a>
+        <a href="sub1.html">2</a>
+        <a href="sub2.html">3</a>
+      </div>
+    
+    <footer>
+        <p>Copyright © John Bryan Luzano BSIT2</p>
+    </footer>
+</body>
+</html>

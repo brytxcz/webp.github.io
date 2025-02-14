@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+        }
+        .contact-info {
+            justify-content: center;
+            gap: 20px;
+        }
+        .contact-info a {
+            display: block;
+            text-align: center;
+        }
+        .contact-info img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="subject.html">Subject Taken</a></li>
+                <li><a href="enrolled.html">Enrolled</a></li>
+                <li><a href="contact.html" class="active">Contact Me</a></li>
+                <li><a href="favorites.html">My Favorites</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <!-- Phone Icon -->
+            <a href="09083442845">
+                <img src="c:\Users\User\Downloads\telephone.png" alt="Phone">
+                <p>09083442845</p>
+            </a>
+
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/yourprofile" target="_blank">
+                <img src="c:\Users\User\Downloads\facebook.png" alt="Facebook">
+                <p>John Bryan C. Luzano</p>
+            </a>
+
+            <!-- Gmail Icon -->
+            <a href="johnbryanluzano6@gmail.com">
+                <img src="c:\Users\User\Downloads\gmail.png" alt="Gmail">
+                <p>johnbryanluzano6@gmail.com</p>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright © John Bryan Luzano BSIT2</p>
+    </footer>
+</body>
+</html>

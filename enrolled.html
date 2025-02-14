@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            flex: 1;
+        }
+        .profile-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile-info div {
+            max-width: 600px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">About Me</a></li>
+                <li><a href="subject.html">Subject Taken</a></li>
+                <li><a href="enrolled.html">Enrolled</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="favorites.html">My Favorites</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+       <center><h2>Subject Currently Enrolled</h2></center>
+        <table>
+            <thead>
+                <tr>
+                    <th>Schedule</th>
+                    <th>Subject Name</th>
+                    <th>Description</th>
+                    <th>Units</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MW 0930-1100A, TTH 1000-1110P</td>
+                    <td>CSIT 5</td>
+                    <td>INFORMATION MANAGEMENT</td>
+                    <td>3.0</td>
+                </tr>
+                <tr>
+                    <td>MW 0100-0400</td>
+                    <td>ITP 4</td>
+                    <td>INTEGRATIVE PROGRAMMING & TECHNOLOGIES 1</td>
+                    <td>3.0</td>
+                </tr>
+                <tr>
+                    <td>MW 0800-0930A, TTH 1110-1210A</td>
+                    <td>ITP 5</td>
+                    <td>NETWORKING 2 (CISCO 2: ROUTING PROTOCOLS & CONCEPTS)</td>
+                    <td>3.0</td>
+                </tr>
+                <tr>
+                    <td>TTH 0130-0400N</td>
+                    <td>ITP 6</td>
+                    <td>INTRODUCTION TO HUMAN COMPUTER INTERACTION</td>
+                    <td>3.0</td>
+                </tr>
+                <tr>
+                    <td>WED 0400-0600A</td>
+                    <td>PE 4</td>
+                    <td>PATH FIT 4: SPORTS (TEAM)</td>
+                    <td>2.0</td>
+                </tr>
+                <tr>
+                    <td>FRI 0100-0410P</td>
+                    <td>COM 1</td>
+                    <td>PURPOSIVE COMMUNICATION / MALAYUNING KOMUNIKASYON</td>
+                    <td>3.0</td>
+                </tr>
+                <tr>
+                    <td>TTH 0430-0540A</td>
+                    <td>PHILO 1</td>
+                    <td>ETHICS / ETIKA</td>
+                    <td>3.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <p>Copyright © John Bryan Luzano BSIT2</p>
+    </footer>
+</body>
+</html>
